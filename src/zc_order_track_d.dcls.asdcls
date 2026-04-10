@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_ORDER_TRACK_D'
+@MappingRole: true
+define role ZC_ORDER_TRACK_D {
+  grant select on ZC_ORDER_TRACK_D
+  where INHERITING CONDITIONS FROM ENTITY ZR_ORDER_TRACK_D REPLACING { ROOT WITH _BaseEntity };
+}
